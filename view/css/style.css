@@ -1,0 +1,276 @@
+body{
+    margin: 0;
+   
+}
+.container{
+    max-width: 100%;
+    margin: 0px auto ;
+    display: flex;
+}
+#header{
+    background-color: #D0D1FF; 
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+#logo{
+    padding: 1%;
+}
+.main-menu{
+    position: relative;
+}
+.main-menu{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.main-menu li a {
+    color : #8E9AAF;
+    display: block;
+    font-size: 18px;
+    padding: 37px 16px;
+    text-decoration:none;
+}
+.main-menu .submenu{
+    position: absolute;
+    background-color: #D0D1FF;
+    padding: 0;
+    list-style: none;
+    width: 160px;
+    display: none;
+    z-index: 2;
+}
+.main-menu .submenu .submenu{
+    left: 160px;
+    top: 0;
+}
+.main-menu .submenu .submenu li a{
+   border-bottom: 0.5px solid #FEEAFA;
+}
+.main-menu .submenu li a{
+    padding: 10px 10px;
+    border-left: 0.5px solid #FEEAFA;
+    border-left: 0.5px solid #FEEAFA;
+    border-bottom: 0.5px solid #FEEAFA ;
+    left: 0;
+    text-align: center;
+}
+.main-menu li:hover>.submenu {
+    display: block;
+}
+.main-menu .submenu li:hover>a{
+   border-left-color: #8E9AAF;
+}
+
+.main-menu .submenu li:first-child a{
+    border-top: 0.5px solid #FEEAFA;
+}
+#icon {
+    display: flex;
+    font-size: 18px;
+  
+}
+#icon div {
+    padding: 35px 20px;
+}
+#icon div i {
+    margin-right: 5px;
+}
+#icon div label{
+    color: #8E9AAF;
+}
+.main-menu>li>a{
+    position: relative;
+}
+.main-menu>li>a::before{
+    content:"";
+    width: 0px;
+    height: 3px;
+    position: absolute;
+   background-color: #8E9AAF;
+   left: 0;
+   bottom: 0;
+   transition:0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.main-menu>li:hover>a::before{
+   width: 100%;
+}
+
+/* .main-menu>li.has-child::after{
+    font: var(--fa-font-solid);
+    content: "\f0d7";
+    position:absolute;
+    top: 0px;
+    padding: 35px 120px;
+    color: black;
+}
+.main-menu>li.has-child>.submenu>li.has-child::after{
+    font: var(--fa-font-solid);
+    content: "\f0da";
+   
+    position:absolute;
+    left: 0;
+    padding: -30px 0px 0 0;
+    color: black;
+}
+
+
+ */
+ .desktop {
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.desktop .div {
+    background-color: #f5f5f5;
+    width:100%;
+    height: auto;
+    position: relative;
+}
+
+.desktop .overlap {
+    position: absolute;
+    width: 751px;
+    height: 417px;
+    top: 76px;
+    left: 0;
+}
+
+.desktop .overlap-group {
+    position: absolute;
+    width: 707px;
+    height: 417px;
+    top: 0;
+    left: 0;
+}
+
+.desktop .text-wrapper {
+    position: absolute;
+    width: 528px;
+    top: 0;
+    left: 179px;
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #8e9aaf;
+    font-size: 50px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.desktop .group {
+    position: absolute;
+    width: 200px;
+    height: 404px;
+    top: 10px;
+    left: 0;
+}
+
+.desktop .overlap-group-2 {
+    position: relative;
+    width: 201px;
+    height: 406px;
+    top: -1px;
+    background-image: url(./img/vector-1.png);
+    background-size: 100% 100%;
+}
+
+.desktop .vector {
+    width: 168px;
+    height: 334px;
+    top: 32px;
+    position: absolute;
+    left: 0;
+}
+
+.desktop .img {
+    width: 136px;
+    height: 263px;
+    top: 66px;
+    position: absolute;
+    left: 0;
+    z-index: 0;
+}
+
+.desktop .vector-2 {
+    width: 106px;
+    height: 194px;
+    top: 94px;
+    position: absolute;
+    left: 0;
+}
+
+.desktop .vector-3 {
+    width: 72px;
+    height: 125px;
+    top: 124px;
+    position: absolute;
+    left: 0;
+}
+
+.desktop .text-wrapper-2 {
+    position: absolute;
+    width: 178px;
+    top: 377px;
+    left: 100px;
+    font-family: "Montserrat-Medium", Helvetica;
+    font-weight: 500;
+    color: #8e9aaf;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.desktop .trao-i-u-n {
+    position: absolute;
+    width: 526px;
+    top: 76px;
+    left: 225px;
+    font-family: "Montserrat-Medium", Helvetica;
+    font-weight: 500;
+    color: #cbc0d3;
+    font-size: 26px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.desktop .overlap-2 {
+    position: absolute;
+    width: 132px;
+    height: 26px;
+    top: 389px;
+    left: 278px;
+}
+
+.desktop .vector-4 {
+    width: 128px;
+    height: 18px;
+    top: 4px;
+    position: absolute;
+    left: 0;
+}
+
+.desktop .ellipse {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: 0;
+    left: 106px;
+    border-radius: 13px;
+    border: 2px solid;
+    border-color: #8e9aaf;
+}
+
+.desktop .ellipse-2 {
+    position: absolute;
+    width: 555px;
+    height: 479px;
+    top: 73px;
+    left: 773px;
+}
